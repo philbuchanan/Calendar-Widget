@@ -1,0 +1,188 @@
+/* RESET
+   ---------------------------------- */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+blockquote,
+q {
+  quotes: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+/* CALENDAR
+   ---------------------------------- */
+body {
+  position: relative;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#calendar {
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-weight: bold;
+  width: 196px;
+  overflow: hidden;
+}
+#calendar #today-title {
+  color: #004540;
+  text-align: center;
+  font-size: 15px;
+  padding: 11px 0;
+}
+#calendar .days-of-week div,
+#calendar #month div {
+  float: left;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  line-height: 16px;
+  width: 28px;
+  height: 29px;
+  padding: 6px 0 0;
+  cursor: default;
+}
+#calendar .days-of-week div#current-day,
+#calendar #month div#current-day {
+  background: #006b64;
+}
+#calendar .days-of-week div.previous-month,
+#calendar #month div.previous-month,
+#calendar .days-of-week div.next-month,
+#calendar #month div.next-month {
+  color: #006b64;
+  background: #00ada2;
+}
+#calendar .days-of-week div {
+  color: #006b64;
+  background: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  height: 20px;
+  padding-top: 0;
+}
+#calendar #control-bar {
+  clear: both;
+  color: #fff;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: bold;
+  overflow: auto;
+}
+#calendar #control-bar #buttons {
+  float: right;
+  list-style: none;
+  width: 196px;
+  margin: 0 auto;
+}
+#calendar #control-bar #buttons li {
+  float: left;
+  width: 34px;
+  height: 35px;
+  cursor: default;
+}
+#calendar #control-bar #buttons li#current-month-title {
+  background: none;
+  text-align: center;
+  font-size: 12px;
+  line-height: 13px;
+  text-transform: uppercase;
+  width: 128px;
+  padding: 13px 0 0;
+}
+#calendar #control-bar #buttons li#current-month-title span {
+  margin: 0 4px;
+}
